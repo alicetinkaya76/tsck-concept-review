@@ -2,6 +2,6 @@
   "version": 1,
   "iterations": 600000,
   "hash": "SHA-256",
-  "salt": "s3YkMgGpI+LnJbdJX36vTw==",
+  "salt": "kZZjb2jyg+V+eSlNAWQp5Q==",
   "payload": "content.bin"
 }

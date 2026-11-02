@@ -13,12 +13,14 @@
 </head>
 <body>
   <main id="entrance">
-    <header><span class="brand">TSCK</span><span class="edition">PRIVATE CONCEPT REVIEW</span></header>
-    <div class="entrance-layout">
-      <section class="invitation"><p class="eyebrow">THE SCIENTIFIC CENTER, KUWAIT</p><h1>An invitation<br>to <em>discover.</em></h1><p class="introduction">A considered conversation about what visitors could experience next.</p><div class="signature">Prepared by Dr. Ali Çetinkaya &amp; Reha Koçak</div></section>
-      <section class="access" aria-labelledby="access-heading"><p class="eyebrow">FOR INVITED REVIEWERS</p><h2 id="access-heading">Open the presentation.</h2><p>Enter the presentation password shared with you.</p><form id="unlock-form"><label for="password">Presentation password</label><div class="password-row"><input id="password" name="presentation-password" type="password" required autocomplete="current-password" spellcheck="false" aria-describedby="access-status"><button type="button" id="show-password" aria-pressed="false">Show</button></div><button type="submit" class="unlock" id="unlock">Open presentation <span aria-hidden="true">↗</span></button><p id="access-status" role="status" aria-live="polite"></p></form><p class="access-note">The password opens the review and its accompanying files.</p></section>
-    </div>
-    <footer><span>Ideas for discussion</span><span>English edition · November 2026</span></footer>
+    <section class="access" aria-label="Password access">
+      <form id="unlock-form">
+        <label for="password">Password</label>
+        <div class="password-row"><input id="password" name="presentation-password" type="password" required autocomplete="current-password" spellcheck="false" aria-describedby="access-status"><button type="button" id="show-password" aria-pressed="false">Show</button></div>
+        <button type="submit" class="unlock" id="unlock">Open <span aria-hidden="true">↗</span></button>
+        <p id="access-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
   </main>
   <div id="review-shell" hidden><div class="review-bar"><span>TSCK <span class="bar-divider">/</span> PRIVATE REVIEW</span><button type="button" id="lock">Lock presentation <span aria-hidden="true">↗</span></button></div><div id="frame-host"></div></div>
 </body>
